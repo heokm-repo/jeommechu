@@ -1,0 +1,26 @@
+﻿# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Local runtime artifacts
+*.pid
+*.log
+database.db
+*.sqlite
+*.sqlite3
+
+# Local scratch/output folders
+scratch/
+screenshots/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

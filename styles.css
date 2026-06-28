@@ -1,0 +1,8 @@
+@import url("./styles/00-tokens.css");
+@import url("./styles/01-base.css");
+@import url("./styles/02-layout.css");
+@import url("./styles/03-components.css");
+@import url("./styles/04-shared-layout.css");
+@import url("./styles/05-home.css");
+@import url("./styles/06-results-restaurants-history.css");
+@import url("./styles/07-profile-error-state.css");

@@ -1,0 +1,59 @@
+/* ========================================================================== 
+   Home Page
+   ========================================================================== */
+.location-select-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.location-select {
+  flex: 1;
+  min-width: 100px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-plain {
+  appearance: none;
+  cursor: pointer;
+}
+
+.input-group-none {
+  margin-bottom: 0;
+}
+
+.input-group-tight {
+  margin-bottom: 16px;
+}
+
+.mood-textarea {
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+
+.recommend-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.tag-group {
+  margin-bottom: 16px;
+}
+
+.tag-group-last {
+  margin-bottom: 24px;
+}
+
+.tag-title {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.tag-chip-group {
+  gap: 8px;
+}

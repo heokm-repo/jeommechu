@@ -1,0 +1,257 @@
+/* ========================================================================== 
+   Result, Restaurant, and History Views
+   ========================================================================== */
+.result-summary-card {
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+  padding: 28px 20px;
+}
+
+.result-eyebrow {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.result-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.result-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.result-weather {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  color: var(--text-main);
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.result-weather.hidden {
+  display: none;
+}
+
+.result-reason {
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.result-restaurant-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.result-restaurant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.result-restaurant-main {
+  flex: 1;
+}
+
+.result-restaurant-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.text-muted-sm {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.map-box {
+  width: 100%;
+  background: var(--bg-input);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.map-box-result {
+  height: 180px;
+  border-radius: var(--radius-sm);
+}
+
+.map-box-list {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.map-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 20px;
+}
+
+.map-placeholder-column {
+  flex-direction: column;
+}
+
+.map-placeholder-icon {
+  margin-bottom: 8px;
+}
+
+.feedback-card {
+  padding: 16px;
+}
+
+.feedback-title {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.result-actions {
+  margin-top: 24px;
+}
+
+.restaurant-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.restaurant-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.restaurant-category-badge {
+  font-size: 0.78rem;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.restaurant-card-meta,
+.favorite-card-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.restaurant-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.restaurant-card-link,
+.restaurant-card-action,
+.history-detail-btn {
+  font-size: 0.86rem;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.restaurant-card-link,
+.history-card-top {
+  color: var(--primary);
+}
+
+.favorite-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.favorite-card-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.86rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.history-card-header,
+.history-card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.history-card-header {
+  margin-bottom: 8px;
+}
+
+.history-card-footer {
+  align-items: center;
+  gap: 10px;
+}
+
+.history-card-emotion {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.history-card-time {
+  font-size: 0.85rem;
+  color: var(--text-disabled);
+  white-space: nowrap;
+}
+
+.history-card-context {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: var(--bg-input);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 10px;
+}
+
+.history-insight-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.history-eyebrow {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.history-insight-title {
+  font-size: 1.35rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.history-insight-icon {
+  color: var(--primary);
+  opacity: 0.85;
+}

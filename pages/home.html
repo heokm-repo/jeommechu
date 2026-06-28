@@ -1,0 +1,115 @@
+﻿<div class="page-container">
+  <div class="page-heading-centered">
+    <h2 class="page-title page-title-primary">오늘 뭐 먹지?</h2>
+    <p class="page-subtitle-spaced">지금 기분과 위치에 맞는 점심 맛집을 찾아드릴게요.</p>
+  </div>
+
+  <section class="card">
+    <h3 class="section-title-row">
+      <span class="section-title-label">
+        <span class="material-symbols-rounded icon-primary">location_on</span>
+        어디서 드실 건가요?
+      </span>
+      <button type="button" id="btn-current-location" class="btn-secondary btn-compact btn-inline btn-current-location">
+        <span class="material-symbols-rounded icon-sm">my_location</span>
+        현재 위치
+      </button>
+    </h3>
+
+    <div class="input-group location-select-row">
+      <select id="location-sido" class="input-text location-select">
+        <option value="서울특별시" selected>서울</option>
+        <option value="경기도">경기</option>
+        <option value="인천광역시">인천</option>
+      </select>
+      <select id="location-sigungu" class="input-text location-select">
+        <option value="강남구" selected>강남구</option>
+        <option value="서초구">서초구</option>
+        <option value="송파구">송파구</option>
+        <option value="마포구">마포구</option>
+      </select>
+      <select id="location-dong" class="input-text location-select">
+        <option value="역삼동" selected>역삼동</option>
+        <option value="삼성동">삼성동</option>
+        <option value="서초동">서초동</option>
+        <option value="대치동">대치동</option>
+      </select>
+    </div>
+
+    <div class="input-group input-group-none">
+      <label for="radius-select">검색 반경</label>
+      <select id="radius-select" class="input-text select-plain">
+        <option value="500">500m 이내</option>
+        <option value="1000" selected>1km 이내</option>
+        <option value="2000">2km 이내</option>
+        <option value="3000">3km 이내</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="card card-tabs">
+    <div class="tab-menu">
+      <button type="button" class="tab-btn active" data-tab="direct-input">직접 입력</button>
+      <button type="button" class="tab-btn" data-tab="tag-select">태그 선택</button>
+    </div>
+
+    <div id="tab-direct-input" class="tab-content">
+      <h3 class="section-title-compact">
+        <span class="material-symbols-rounded icon-primary">edit_note</span>
+        지금 상태
+      </h3>
+      <div class="input-group input-group-tight">
+        <textarea id="mood-text" class="input-text mood-textarea" rows="4" placeholder="스트레스 받아서 매운 국물이 먹고 싶어요"></textarea>
+      </div>
+      <button type="button" id="btn-recommend-text" class="btn-primary recommend-button">
+        <span class="material-symbols-rounded">chat</span>
+        추천받기
+      </button>
+    </div>
+
+    <div id="tab-tag-select" class="tab-content hidden">
+      <h3 class="section-title-compact">
+        <span class="material-symbols-rounded icon-primary">sell</span>
+        상태 태그
+      </h3>
+
+      <div class="tag-group">
+        <h4 class="tag-title">기분</h4>
+        <div class="chip-group tag-chip-group" id="mood-chips-feel">
+          <button type="button" class="chip" data-value="스트레스">스트레스</button>
+          <button type="button" class="chip" data-value="피곤함">피곤함</button>
+          <button type="button" class="chip" data-value="우울함">우울함</button>
+          <button type="button" class="chip" data-value="더위">더위</button>
+          <button type="button" class="chip" data-value="기분 좋음">기분 좋음</button>
+        </div>
+      </div>
+
+      <div class="tag-group">
+        <h4 class="tag-title">음식 스타일</h4>
+        <div class="chip-group tag-chip-group" id="mood-chips-style">
+          <button type="button" class="chip" data-value="매운 국물">매운 국물</button>
+          <button type="button" class="chip" data-value="든든한 한식">든든한 한식</button>
+          <button type="button" class="chip" data-value="가벼운 한 끼">가벼운 한 끼</button>
+          <button type="button" class="chip" data-value="시원한 메뉴">시원한 메뉴</button>
+          <button type="button" class="chip" data-value="달달한 디저트">달달한 디저트</button>
+        </div>
+      </div>
+
+      <div class="tag-group tag-group-last">
+        <h4 class="tag-title">식사 상황</h4>
+        <div class="chip-group tag-chip-group" id="mood-chips-context">
+          <button type="button" class="chip" data-value="혼밥">혼밥</button>
+          <button type="button" class="chip" data-value="빠르게">빠르게</button>
+          <button type="button" class="chip" data-value="가성비">가성비</button>
+          <button type="button" class="chip" data-value="회식">회식</button>
+          <button type="button" class="chip" data-value="데이트">데이트</button>
+        </div>
+      </div>
+
+      <button type="button" id="btn-recommend-chips" class="btn-primary recommend-button">
+        <span class="material-symbols-rounded">check_box</span>
+        태그로 추천받기
+      </button>
+    </div>
+  </section>
+</div>

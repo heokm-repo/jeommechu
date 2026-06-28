@@ -1,0 +1,37 @@
+/* ==========================================================================
+   CSS Variables & Tokens
+   ========================================================================== */
+   :root {
+    /* Colors - Warm & Premium (No Dark Mode) */
+    --primary: #FF7B00; /* Appetizing warm orange */
+    --primary-hover: #E66A00;
+    --primary-light: #FFF0E5;
+    
+    --bg-main: #FAFAFA;
+    --bg-card: #FFFFFF;
+    --bg-input: #F3F3F3;
+    
+    --text-main: #1A1A1A;
+    --text-muted: #666666;
+    --text-disabled: #A0A0A0;
+    
+    --border-light: #EBEBEB;
+    --border-strong: #D1D1D1;
+    
+    --error: #FF3B30;
+    --success: #34C759;
+  
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 24px rgba(0,0,0,0.12);
+  
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 9999px;
+  
+    /* Typography */
+    --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  }

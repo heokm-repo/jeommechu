@@ -1,0 +1,43 @@
+<div class="page-container">
+  <div class="page-heading-lg">
+    <h2 class="page-title-auth">마이페이지</h2>
+  </div>
+
+  <div id="profile-logged-out" class="card text-center empty-state">
+    <span class="material-symbols-rounded icon-xxl empty-state-icon">account_circle</span>
+    <h3 class="profile-message-title">로그인이 필요합니다</h3>
+    <p class="profile-message-copy">회원가입하면 게스트로 만든 추천 기록과 찜을 이어서 사용할 수 있어요.</p>
+
+    <div class="button-row">
+      <button type="button" class="btn-secondary button-flex-1" data-navigate="signup">회원가입</button>
+      <button type="button" class="btn-primary button-flex-1 btn-mid" data-navigate="login">로그인</button>
+    </div>
+  </div>
+
+  <div id="profile-logged-in" class="hidden">
+    <div class="card profile-card">
+      <div class="profile-avatar">
+        <span class="material-symbols-rounded icon-lg icon-primary">person</span>
+      </div>
+      <div>
+        <h3 class="profile-email" id="profile-email">user@example.com</h3>
+        <p class="profile-status" id="profile-status">회원 계정</p>
+      </div>
+    </div>
+
+    <div class="card profile-menu">
+      <button type="button" class="profile-menu-item" data-navigate="history">
+        <span class="profile-menu-label">추천 기록 보기</span>
+        <span class="material-symbols-rounded icon-muted">chevron_right</span>
+      </button>
+      <button type="button" class="profile-menu-item" data-navigate="favorites">
+        <span class="profile-menu-label">찜한 맛집 보기</span>
+        <span class="material-symbols-rounded icon-muted">chevron_right</span>
+      </button>
+      <button type="button" id="btn-logout" class="profile-menu-item profile-menu-danger">
+        <span class="profile-menu-label">로그아웃</span>
+        <span class="material-symbols-rounded">logout</span>
+      </button>
+    </div>
+  </div>
+</div>

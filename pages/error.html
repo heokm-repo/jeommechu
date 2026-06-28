@@ -1,0 +1,43 @@
+<div class="page-container">
+  <section class="card error-card">
+    <div class="error-header">
+      <span class="material-symbols-rounded icon-lg error-icon">error</span>
+      <div>
+        <p class="error-eyebrow">요청을 완료하지 못했습니다</p>
+        <h2 id="error-title" class="error-title">오류가 발생했습니다</h2>
+      </div>
+    </div>
+
+    <p id="error-message" class="error-message"></p>
+
+    <div class="error-meta-list">
+      <div id="error-status-row" class="error-meta-row">
+        <strong class="error-meta-label">상태 코드</strong>
+        <span id="error-status" class="error-meta-value"></span>
+      </div>
+      <div id="error-path-row" class="error-meta-row">
+        <strong class="error-meta-label">요청 경로</strong>
+        <span id="error-path" class="error-meta-value error-meta-path"></span>
+      </div>
+      <div id="error-time-row" class="error-meta-row">
+        <strong class="error-meta-label">발생 시간</strong>
+        <span id="error-time" class="error-meta-value"></span>
+      </div>
+    </div>
+
+    <details id="error-detail-wrap" class="error-detail-wrap">
+      <summary class="error-detail-summary">상세 오류 보기</summary>
+      <pre id="error-detail" class="error-detail"></pre>
+    </details>
+
+    <div class="button-row-sm">
+      <button type="button" id="btn-error-back" class="btn-secondary button-flex-1 btn-inline">
+        <span class="material-symbols-rounded">arrow_back</span>
+        이전 화면
+      </button>
+      <button type="button" class="btn-primary button-flex-1 btn-mid" data-navigate="home">
+        홈으로
+      </button>
+    </div>
+  </section>
+</div>

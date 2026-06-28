@@ -1,0 +1,51 @@
+<div class="page-container">
+  <section class="card text-center result-summary-card">
+    <p class="result-eyebrow">AI가 고른 오늘의 추천</p>
+    <h1 id="result-menu-name" class="result-title"></h1>
+    <p id="result-meta" class="result-meta"></p>
+    <p id="result-weather" class="result-weather hidden"></p>
+    <p id="result-reason" class="result-reason"></p>
+  </section>
+
+  <section id="result-restaurant-card" class="card hidden result-restaurant-card">
+    <div class="result-restaurant-header">
+      <div class="result-restaurant-main">
+        <h3 id="res-name" class="result-restaurant-name"></h3>
+        <p id="res-meta" class="text-muted-sm"></p>
+      </div>
+      <button id="res-fav-btn" class="btn-icon favorite-idle" aria-label="찜하기">
+        <span class="material-symbols-rounded icon-md">favorite</span>
+      </button>
+    </div>
+
+    <div id="res-map-container" class="map-box map-box-result">
+      <div id="res-map-placeholder" class="map-placeholder">
+        지도를 로딩하고 있어요...
+      </div>
+    </div>
+  </section>
+
+  <section id="result-feedback" class="card feedback-card">
+    <h3 class="feedback-title">추천은 어땠나요?</h3>
+    <div class="button-row-sm">
+      <button type="button" class="btn-secondary button-flex-1 btn-inline" data-feedback-rating="2" data-feedback-comment="다시 고르고 싶음">
+        <span class="material-symbols-rounded">refresh</span>
+        다시 고를래요
+      </button>
+      <button type="button" class="btn-primary button-flex-1 btn-mid" data-feedback-rating="5" data-feedback-comment="추천 만족">
+        좋아요
+      </button>
+    </div>
+  </section>
+
+  <div class="button-row result-actions">
+    <button type="button" class="btn-secondary button-flex-1 btn-inline" data-navigate="home">
+      <span class="material-symbols-rounded">refresh</span>
+      다시 추천
+    </button>
+    <button type="button" class="btn-primary button-flex-2 btn-mid" data-navigate="restaurants">
+      맛집 보기
+      <span class="material-symbols-rounded">arrow_forward</span>
+    </button>
+  </div>
+</div>

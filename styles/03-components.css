@@ -1,0 +1,206 @@
+  /* ==========================================================================
+     UI Components
+     ========================================================================== */
+  
+  /* Cards */
+  .card {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 16px 24px;
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-hover);
+  }
+  
+  .btn-secondary {
+    background: var(--bg-input);
+    color: var(--text-main);
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+  
+  .btn-secondary:hover {
+    background: var(--border-light);
+  }
+  
+  .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-input);
+    color: var(--text-main);
+    transition: all 0.2s ease;
+  }
+  
+  .btn-icon:hover {
+    background: var(--border-light);
+  }
+  
+  /* Inputs */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+  }
+  
+  .input-text {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: var(--bg-input);
+    font-size: 1rem;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  
+  .input-text:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--bg-card);
+  }
+  
+  /* Chips */
+  .chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .chip {
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    background: var(--bg-input);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .chip:hover {
+    background: var(--border-light);
+  }
+  
+  .chip.selected {
+    background: var(--primary-light);
+    color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 600;
+  }
+  
+  /* Utilities */
+  .text-center { text-align: center; }
+  .mt-4 { margin-top: 16px; }
+  .mb-4 { margin-bottom: 16px; }
+  .hidden { display: none !important; }
+  
+  /* Loading Overlay */
+  .loader-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--primary-light);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Toasts */
+  .toast-container {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 3000;
+  }
+  
+  .toast {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    font-size: 0.95rem;
+    box-shadow: var(--shadow-lg);
+    animation: toastFade 0.3s ease-out;
+  }
+  
+  @keyframes toastFade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Tab Menu */
+  .tab-menu {
+    display: flex;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 20px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .tab-btn:hover {
+    color: var(--text-main);
+  }
+
+  .tab-btn.active {
+    font-weight: 700;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+  }
