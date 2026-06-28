@@ -12,7 +12,7 @@ try:
 except ImportError:
     from infra.database import MySQLConnection, connect
     from clients import build_kakao_search_params, kakao_place_to_restaurant, kakao_request
-    from location_service import resolve_search_location
+    from services.location_service import resolve_search_location
     from repositories.restaurant_repository import save_restaurant_search_snapshot, upsert_restaurant
     from schemas import RestaurantSearchRequest
     from utils import utc_now

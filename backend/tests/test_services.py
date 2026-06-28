@@ -2,16 +2,12 @@ from __future__ import annotations
 
 import unittest
 
-from backend import restaurant_service
 from backend.services.auth_service import hash_password, verify_password
 from backend.services.restaurant_service import search_options
 from backend.services.user_service import create_guest_user
 
 
 class ServicesTest(unittest.TestCase):
-    def test_legacy_restaurant_service_wrapper_exports_search_options(self) -> None:
-        self.assertIs(restaurant_service.search_options, search_options)
-
     def test_restaurant_search_options_are_available_from_services_package(self) -> None:
         options = search_options({"query": " 돈까스 ", "longitude": "127", "latitude": "37"})
 

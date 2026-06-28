@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import unittest
 
-from backend import external_clients
 from backend.clients import build_kakao_search_params, convert_to_grid, postposition_eul_reul
 
 
@@ -26,8 +25,7 @@ class ClientsTest(unittest.TestCase):
     def test_weather_grid_conversion_is_exported(self) -> None:
         self.assertEqual(convert_to_grid(37.5, 127.0), (60, 125))
 
-    def test_legacy_external_clients_wrapper_exports_client_functions(self) -> None:
-        self.assertIs(external_clients.build_kakao_search_params, build_kakao_search_params)
+    def test_postposition_helper_handles_final_consonant(self) -> None:
         self.assertEqual(postposition_eul_reul("밥"), "을")
         self.assertEqual(postposition_eul_reul("커피"), "를")
 

@@ -8,7 +8,7 @@ try:
 except ImportError:
     from infra.database import connect
     from repositories.recommendation_repository import ensure_guest_user
-    from auth_service import create_session, session_cookie
+    from services.auth_service import create_session, session_cookie
     from utils import utc_now
 
 

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from backend.restaurant_service import search_options
+from backend.services.restaurant_service import search_options
 from backend.schemas import RecommendationSearchRequest, RestaurantSearchRequest
 
 

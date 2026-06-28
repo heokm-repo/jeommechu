@@ -20,7 +20,7 @@ try:
 except ImportError:
     from infra.database import connect
     from clients import extracted_keywords_for, get_current_weather, plan_kakao_search_query
-    from location_service import resolve_search_location
+    from services.location_service import resolve_search_location
     from repositories.recommendation_repository import (
         ensure_guest_user,
         insert_ai_response,
@@ -29,7 +29,7 @@ except ImportError:
         insert_search_log,
         save_search_recommendations,
     )
-    from restaurant_service import restaurant_search
+    from services.restaurant_service import restaurant_search
     from schemas import RecommendationSearchRequest
     from utils import to_json, utc_now
 
